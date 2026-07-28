@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle move</title>
+</head>
+<style>
+    .circle
+    {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 50%;
+        animation: move 2s linear infinite;
+    }
+    @keyframes move
+    {
+        0%
+        {
+            transform: translateX(0);
+        }
+        50%
+        {
+            transform: translateX(200px);
+        }
+        100%
+        {
+            transform: translateX();
+        }
+    }
+</style>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

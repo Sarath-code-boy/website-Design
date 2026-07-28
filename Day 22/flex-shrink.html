@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .shrink
+         {
+            display: flex;
+            background-color: aqua;
+            width: 300px;
+            
+            
+         }
+         .shrink>div
+         {
+            background-color: blue;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            color: aliceblue;
+        }
+        .one
+        {
+            flex-shrink: 1;
+            
+        }
+        .two
+        {
+            flex-shrink: 0;
+        }
+        .three
+        {
+            flex-shrink: 0;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="shrink">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

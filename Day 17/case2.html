@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="k1"></h2>
+    <script>
+        var BMI=parseInt(prompt("Enter the BMI::"))
+        if(BMI<18.5)
+    {
+        document.getElementById("k1").innerHTML="Underweight";
+    }
+    else if(BMI >=18.5 && BMI<=24.9)
+    {
+       document.getElementById("k1").innerHTML="Normal";
+    }
+    else if(BMI >=25 && BMI<=29.9)
+    {
+        document.getElementById("k1").innerHTML="Overweight";
+    }
+    else//(BMI>=30)
+    {
+        document.getElementById("k1").innerHTML="Obese";
+    }
+    </script>
+</body>
+</html>

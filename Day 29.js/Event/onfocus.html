@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus</title>
+</head>
+<body>
+    <label>Your Name:</label>
+    <input type="text" onfocus="myfuntion(this)">
+    <br><br>
+    <label>password:</label>
+    <input type="text" onblur="blurfuntion()" id="fname">
+    <script>
+        function myfuntion(x)
+        {
+            x.style.background="yellow";
+        }
+        function blurfuntion()
+        {
+            let y=document.getElementById("fname");
+            y.value = y.value.toUpperCase();
+            y.style.background="pink";
+        }
+    </script>
+</body>
+</html>

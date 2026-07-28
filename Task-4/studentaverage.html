@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     for( var student=1; student<=3; student++)  
+   {
+    var total=0;
+
+    document.write("<h3>student "+student+"</h3>");
+
+    for(var subject=1; subject<=5; subject++)
+        {
+            var mark=parseInt(prompt("Enter student"+ student+" subject"+ subject +" mark"));
+
+           total= total + mark;
+           document.write("subject "+ subject +" mark: " +mark+ "<br>");
+        }
+        var average = total / 5;
+
+        document.write("<b>Total : "+total+"</b> </br>" );
+        document.write("<b>Average :"+average+ "</b>");
+        document.write("<hr>");
+     
+   }
+   </script> 
+</body>
+</html>

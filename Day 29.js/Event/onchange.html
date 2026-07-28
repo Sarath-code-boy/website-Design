@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+</head>
+<body>
+    <p>This is onchange</p>
+    <select id="Myselect" onchange="myfun1()">
+        <option value="select">select</option>
+        <option value="audio">audio</option>
+        <option value="video">video</option>
+    </select>
+    <p id="d1"></p>
+    <script>
+        function myfun1()
+        {
+            document.getElementById("d1").innerHTML="You Select:"+document.getElementById("Myselect").value;
+        }
+    </script>
+</body>
+</html>

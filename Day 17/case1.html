@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="s5"></h2>
+    <script>
+        var amount=parseInt(prompt("Enter the Amount::"))
+        if(amount>=75000)
+    {
+        document.getElementById("s5").innerHTML="Premium loan";
+    }
+    else if(amount>=50000)
+    {
+        document.getElementById("s5").innerHTML="standerd loan";
+    }
+    else if(amt>=25000)
+    {
+        document.getElementById("s5").innerHTML="Basic loan";
+    }
+    else
+    {
+        document.getElementById("s5").innerHTML="Loan not eligible!!";
+    }
+    </script>
+</body>
+</html>

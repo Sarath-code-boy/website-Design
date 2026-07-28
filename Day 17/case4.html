@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="c1"></h2>
+    <script>
+        var rate=parseInt(prompt("Enter the score "))
+        if(rate>=90 && rate<100)
+    {
+        document.getElementById("c1").innerHTML="Outstanding"
+    }
+    else if(rate>=75 && rate<=89)
+    {
+        document.getElementById("c1").innerHTML="Excellent"
+    }
+    else if(rate>=60 && rate<=74)
+    {
+        document.getElementById("c1").innerHTML="Good"
+    }
+    else
+    {
+        document.getElementById("c1").innerHTML="Need Improvement"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="p1"></h2>
+    <script>
+        var amt=parseInt(prompt("Enter the Amount"))
+        if(amt>10000)
+    {
+        document.getElementById("p1").innerHTML="30% Discount"
+    }
+    else if(amt>=5000 && amt<=9999)
+    {
+        document.getElementById("p1").innerHTML="20% Discount"
+    }
+    else if(amt>=2000 && amt<=4999)
+    {
+        document.getElementById("p1").innerHTML="10% Discount"
+    }
+    else
+       document.getElementById("p1").innerHTML="No Discount"
+    </script>
+</body>
+</html>

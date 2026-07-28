@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onblur validate</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <form>
+        Enter the value is:<input type="text" id="fname" onblur="myfun()"/>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        function myfun()
+        {
+            var x=document.getElementById("fname").value;
+            if(x=="")
+        {
+            document.getElementById("demo").innerHTML="please enter the value"
+        }
+        else
+        {
+            document.getElementById("demo").innerHTML="your value is:"+x;
+        }
+        }
+    </script>
+</body>
+</html>

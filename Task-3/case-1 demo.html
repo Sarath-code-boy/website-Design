@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+Name :
+<input type="text" id="name"><br><br>
+
+Email :
+<input type="text" id="email"><br><br>
+
+Course :
+<input type="text" id="course"><br><br>
+
+Mobile :
+<input type="text" id="mobile"><br><br>
+
+<button onclick="addStudent()">Register</button>
+
+<h3>Total Students : <span id="count">0</span></h3>
+
+<table border="1" id="table">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Mobile</th>
+        <th>Delete</th>
+    </tr>
+</table>
+
+<script>
+
+var total = 0;
+
+function addStudent()
+{
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var course = document.getElementById("course").value;
+    var mobile = document.getElementById("mobile").value;
+
+    if(name=="")
+    {
+        alert("Enter Name");
+        return;
+    }
+
+    if(email=="")
+    {
+        alert("Enter Email");
+        return;
+    }
+
+    if(course=="")
+    {
+        alert("Enter Course");
+        return;
+    }
+
+    if(mobile=="")
+    {
+        alert("Enter Mobile Number");
+        return;
+    }
+
+    if(mobile.length!=10)
+    {
+        alert("Mobile Number should be 10 digits");
+        return;
+    }
+
+    var table = document.getElementById("table");
+
+    var row = table.insertRow();
+
+    row.insertCell(0).innerHTML = name;
+    row.insertCell(1).innerHTML = email;
+    row.insertCell(2).innerHTML = course;
+    row.insertCell(3).innerHTML = mobile;
+    row.insertCell(4).innerHTML =
+    "<button onclick='deleteStudent(this)'>Delete</button>";
+
+    total++;
+
+    document.getElementById("count").innerHTML = total;
+
+    document.getElementById("name").value="";
+    document.getElementById("email").value="";
+    document.getElementById("course").value="";
+    document.getElementById("mobile").value="";
+}
+
+function deleteStudent(btn)
+{
+    var row = btn.parentNode.parentNode;
+
+    row.remove();
+
+    total--;
+
+    document.getElementById("count").innerHTML = total;
+}
+
+</script>
+
+</body>
+</html>

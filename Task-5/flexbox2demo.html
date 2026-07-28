@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .header
+   {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+   }
+   .center
+   {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   }
+   .left
+   {
+    background-color: aquamarine;
+    padding: 50px;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+   }
+   .right
+   {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: orangered;
+    padding: 10px;
+   }
+
+   .topic
+   {
+    align-self: flex-end;
+    margin-left: 10px;
+   }
+   .image
+   {
+    display: flex;
+    justify-content: space-around;
+   }
+   .box
+   {
+    padding: 10px;
+    background-color: seashell;
+    height: 10px;
+    align-self: flex-end;
+    
+   }
+</style>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="center">
+            <div class="left">Aside</div>
+            <div class="right">
+            <h3 class="topic">Article</h3>
+            <div class="image">
+            <div class="box">image1</div>
+            <div class="box">image2</div>
+            <div class="box">image3</div>
+            </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

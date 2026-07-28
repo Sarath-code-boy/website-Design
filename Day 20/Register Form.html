@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Student Register Form</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: aqua;
+            
+            
+        }
+        li
+        {
+           float: left;
+           
+        }
+        ul li a
+        {
+           display: block;
+           text-decoration: none;
+           color: black;
+           padding: 14px 16px;
+          
+        }
+        ul li a:hover
+        {
+            background: white;
+            border-radius: 2px;
+        }
+        .full
+        {
+          width: 400px;  
+          margin: 50px auto;
+          background-color: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px grey;
+        }
+        h2
+        {
+            text-align: center;
+            color: blue;
+        }
+        .title
+        {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            
+        }
+        input,select,textarea
+        {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"]
+        {
+            width: auto;
+        }
+        button
+        {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover
+        {
+            background: black;
+        }
+    </style>
+    
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="navhorizo.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Register</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+   <div class="full">
+    <h2>Student Registration Form</h2>
+    <form>
+        <Label class="title">Full Name</Label>
+        <input type="text" class="name" placeholder="Enter the name"> <br>
+        <Label class="title">Email</Label>
+        <input type="email" class="email" placeholder="Enter the email"><br>
+        <Label class="title">Password</Label>
+        <input type="password" class="password" placeholder="Enter the password"><br>
+        <Label class="title">Mobile</Label>
+        <input type="number" class="number" placeholder="Enter the mobile number"> <br>
+        <label class="title">Date of Birth</label>
+        <input type="date" class="date" > <br>
+        <label class="title">Gender</label>
+
+        <input type="radio" value="Male" name="gender">
+        <label>Male</label>
+
+        <input type="radio" value="Female" name="gender">
+        <label>Female</label>
+
+        <input type="radio"  value="Other" name="gender">
+        <label>Other</label><br>
+
+        <label class="title">Course</label> 
+        <select> 
+            <option value="Select course">select course</option>
+            <option value="">B.E</option>
+            <option value="">BCA</option>
+            <option value="">Bsc</option>
+        </select> <br>
+
+        <label class="title">Address</label>
+        <textarea name="text" id="textarea" placeholder="Enter your address"></textarea><br>
+
+        <label class="title">Skills</label>
+        <input type="checkbox">
+
+        <label>HTML</label>
+        <input type="checkbox">
+
+        <label>CSS</label>
+        <input type="checkbox">
+
+        <label>JavaScript</label>
+        <input type="checkbox">
+
+        <label>Python</label><br>
+        <button class="button">Register</button>
+    </form>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

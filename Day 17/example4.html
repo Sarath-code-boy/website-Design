@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="e1"></h3>
+    <script>
+        var mark=parseInt(prompt("Enter the Mark::"))
+        if(mark>=90)
+    {
+        document.getElementById("e1").innerHTML=("Grade-A");
+    }
+    else if (mark>=80)
+    {
+        document.getElementById("e1").innerHTML=("Grade-B");
+    }
+    else if (mark>=50)
+    {
+        document.getElementById("e1").innerHTML=("Grade-C")
+    }
+    else if (mark>=35)
+    {
+        document.getElementById("e1").innerHTML=("Grade-D")
+    }
+    else
+    {
+        document.getElementById("e1").innerHTML=("Fail!!!")
+    }
+    </script>
+</body>
+</html>

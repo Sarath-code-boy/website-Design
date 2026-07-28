@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .title
+        {
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+        #task
+        {
+           margin-left: 350px;
+           justify-content: center;
+           padding: 20px;
+           width: 50%;
+           font-size: 20px;
+
+        }
+        button
+        {
+            margin-left: 47%;
+            margin-top: 25px;
+            padding: 15px;
+            border-style: none;
+            background-color: rgb(17, 209, 209);
+            border-radius: 5px;
+            width: 15%;
+            font-size: 20px;
+        }
+        table
+        {
+            margin-left:350px ;
+            width: 50%;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        div
+        {
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 50px;
+            font-size: 30px;
+        }
+        
+     </style>
+</head>
+<body>
+    <h2 class="title">To-Do List</h2> <br>
+
+    <input type="text" id="task" placeholder="Enter Task"><br>
+
+    <button onclick="addTask()" >Add Task</button><br>
+
+    <table border="1" class="add"> 
+        <thead class="top">
+            <td id="first">Task</td>
+            <td id="complete">Complete</td>
+            <td id="delele">Delete</td>
+        </thead>
+        <tbody class="taskTable">
+
+        </tbody>
+    </table><br>
+    <div>Pending Tasks : 0</div>
+    
+    
+    <script>
+         function addTask()
+         {
+            var task=document.getElementById("task");
+            var task=input.value.trim();
+            if(task=="")
+         {
+            alert("please enter the task");
+            return;
+         }
+            let table=document.getElementById("taskTable");
+
+            let row=document.createElement("tr");
+
+            let taskCell=document.createElement("td");
+            taskCell.innerText=task;
+
+            let completeCell=document.createElement("td");
+            let completeBtn=document.createElement("button");
+            completeBtn.innerText="completed";
+
+            completeBtn.onclick=function()
+            {
+                 
+            }
+          }
+    </script>
+
+
+
+</body>
+</html>

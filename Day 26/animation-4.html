@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div
+    {
+        width: 350px;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        background-color: aqua;
+        padding: 20px;
+        
+    }
+    #one
+    {
+        animation-timing-function: ease;
+    }
+    #two
+    {
+        animation-timing-function: ease-in;
+    }
+    #three
+    {
+        animation-timing-function: linear;
+    }
+    #four
+    {
+        animation-timing-function: ease-in-out;
+    }
+    #five
+    {
+        animation-timing-function: ease-out;
+    }
+    @keyframes example
+    {
+        from
+        {
+            margin-left: 60%;
+        }
+        to
+        {
+            margin-left: 0%;
+        }
+    }
+</style>
+<body>
+    <div id="one">Welcome</div>
+    <div id="two">Welcome</div>
+    <div id="three">Welcome</div>
+    <div id="four">Welcome</div>
+    <div id="five">Welcome</div>
+    
+</body>
+</html>

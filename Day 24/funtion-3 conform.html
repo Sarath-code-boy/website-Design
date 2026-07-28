@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="demo()">Click here</button>
+    <p id="d1"></p>
+    <script>
+         function demo()
+         {
+            var t1;
+            if(confirm("press a button!"))
+         {
+            t1="Welcome to ok button"
+         }
+         else
+         {
+            t1="welcome to cancel button"
+         }
+         document.getElementById("d1").innerHTML=t1;
+            
+        }
+    </script>
+</body>
+</html>

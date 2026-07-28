@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* styles.css - Flexbox demo */
+
+/* Page basics */
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --gap:12px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  color:#111827;
+  line-height:1.35;
+  padding:20px;
+}
+
+/* Header / Footer */
+.site-header, .site-footer{
+  text-align:center;
+  margin-bottom:18px;
+}
+.site-header h1{margin:0 0 6px 0}
+.site-footer{margin-top:24px; color:var(--muted)}
+
+/* Panel wrapper */
+.panel{
+  background:var(--card);
+  border-radius:10px;
+  padding:16px;
+  margin-bottom:16px;
+  box-shadow:0 1px 4px rgba(15,23,42,0.06);
+}
+
+/* Generic container styles */
+.container{
+  display:flex;               /* activate flexbox */
+  gap:var(--gap);             /* spacing between items */
+  padding:12px;
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  border-radius:8px;
+  align-items:center;         /* default cross-axis alignment */
+}
+
+/* Basic row layout */
+.container.basic{
+  flex-direction:row;         /* main axis left-to-right */
+  justify-content:space-around; /* distribute along main axis */
+}
+
+/* Wrapping grid */
+.container.wrap{
+  flex-wrap:wrap;             /* allow items to wrap to next line */
+  justify-content:flex-start;
+}
+
+/* Order demo container */
+.container.order-demo{
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+/* Flex items common */
+.item{
+  min-width:80px;
+  min-height:64px;
+  padding:8px;
+  color:#fff;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:8px;
+  box-shadow:0 1px 2px rgba(2,6,23,0.06);
+  flex: 1 1 120px;            /* grow, shrink, base width */
+}
+
+/* Colors */
+.item1{background:#8bc34a}
+.item2{background:#00bcd4}
+.item3{background:#ffeb3b;color:#111}
+.item4{background:#e91e63}
+.item5{background:#6a1b4d}
+.item6{background:#9c27b0}
+
+/* Example overrides */
+.container.basic .item1{flex:0 0 90px} /* fixed width for item1 */
+.container.wrap .item{flex: 1 1 160px} /* flexible grid items */
+
+/* align-self example (inline style used in HTML for demo) */
+
+/* Responsive breakpoints - mobile first */
+@media (max-width:720px){
+  .container{
+    padding:8px;
+  }
+  .item{
+    min-width:72px;
+    min-height:56px;
+    font-size:14px;
+  }
+  /* stack panels vertically on small screens */
+  .container.basic{
+    flex-direction:column;
+    align-items:stretch;
+  }
+}
+
+/* Larger screens */
+@media (min-width:1100px){
+  .container.basic{
+    justify-content:space-between;
+  }
+  .container.wrap{
+    gap:18px;
+  }
+}
+
+</style>
+<body>
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flexbox Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Flexbox Demo</h1>
+  </header>
+
+  <section class="panel">
+    <h2>Basic Row Layout</h2>
+    <div class="container basic">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Wrapping Grid</h2>
+    <div class="container wrap">
+      <!-- same items but with different flex rules -->
+      <div class="item item1">A</div>
+      <div class="item item2">B</div>
+      <div class="item item3">C</div>
+      <div class="item item4">D</div>
+      <div class="item item5">E</div>
+      <div class="item item6">F</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Order and Align Self</h2>
+    <div class="container order-demo">
+      <div class="item item1" style="order:2">First visually</div>
+      <div class="item item2" style="order:3">Second visually</div>
+      <div class="item item3" style="order:1; align-self:flex-end">Third visually</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <small>Flexbox cheat sheet demo</small>
+  </footer>
+</body>
+</html>
+
+
+</body>
+</html>

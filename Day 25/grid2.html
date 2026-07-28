@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-2</title>
+</head>
+<style>
+    .container
+    {
+        display: grid;
+        grid-template-columns: 20px 20px 20px 20px;
+        gap: 30px;
+        background-color: aqua;
+        column-gap: 50px;
+        row-gap: 30px;
+        padding: 20px;
+    }
+    .container>div
+    {
+        background-color: rgb(165, 165, 91);
+        color: white;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+    }
+    .one
+    {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .one
+    {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

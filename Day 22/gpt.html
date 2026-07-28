@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex Shrink Example</title>
+
+<style>
+.shrink{
+    display: flex;
+    width: 300px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+.shrink > div
+{
+    width: 150px;          
+    padding: 20px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.one{
+    flex-shrink: 0;
+}
+
+.two{
+    flex-shrink: 1;
+}
+
+.three{
+    flex-shrink: 2;
+}
+
+.four{
+    flex-shrink: 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="shrink">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+</div>
+
+</body>
+</html>

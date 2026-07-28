@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-3</title>
+</head>
+<style>
+    *
+    {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+    body
+    {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+    }
+    .container
+    {
+        display: grid;
+        grid-template-areas: "header header header"
+        "sidebar main main"
+        "footer footer footer";
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 500px 400px 60px;
+        gap: 10px;
+        padding: 10px;
+    }
+    .header
+    {
+        grid-area: header;
+        background-color: brown;
+        color: white;
+        text-align: center;
+        line-height: 80px;
+    }
+    .side
+    {
+        grid-area: sidebar;
+        background-color: aqua;
+        padding: 20px;
+        padding: 10px;
+    }
+    .main
+    {
+        grid-area: main;
+        background-color: aquamarine;
+        padding: 30px;
+        text-align: center;
+    }
+    .footer
+    {
+        grid-area: footer;
+        background-color: rgb(62, 13, 90);
+        color: white;
+        text-align: center;
+        line-height: 60px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="side">sidebar</div>
+        <div class="main">main content</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- combinators -->
+    <style>
+        /* div p
+        {
+            background-color: yellow;
+        } */
+         /* div>p
+         {
+            background-color: yellow;
+         } */
+          /* div+p
+          {
+            background-color: yellow;
+          } */
+           div~p
+           {
+            background-color: yellow;
+           }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is inside para-1</p>
+        <p>This is inside para-2</p>
+        <section>
+            <p>This is section para</p>
+        </section>
+        </div>
+        <p>This is outside para-1</p>
+        <p>This is the outside para-2</p>
+</body>
+</html>

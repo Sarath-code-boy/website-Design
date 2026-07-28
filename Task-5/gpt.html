@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Layout</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    h1{
+      text-align: center;
+      padding: 20px 0;
+      font-size: 40px;
+    }
+
+    .container{
+      width: 100vw;
+      min-height: calc(100vh - 80px);
+      border: 4px solid #c07a8b;
+      padding: 15px;
+      background: white;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 60px 180px 180px 60px;
+      gap: 15px;
+
+      grid-template-areas:
+        "header header"
+        "article text1"
+        "article text2"
+        "main main"
+        "footer footer";
+    }
+
+    .box{
+      background: #404463;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .header{ grid-area: header; }
+    .article{ grid-area: article; }
+    .text1{ grid-area: text1; }
+    .text2{ grid-area: text2; }
+    .main{ grid-area: main; }
+    .footer{ grid-area: footer; }
+  </style>
+</head>
+<body>
+
+  <h1>Grid</h1>
+
+  <div class="container">
+    <div class="box header">HEADER</div>
+    <div class="box article">ARTICLE</div>
+    <div class="box text1">TEXT 1</div>
+    <div class="box text2">TEXT 2</div>
+    <div class="box main">MAIN</div>
+    <div class="box footer">FOOTER</div>
+  </div>
+
+</body>
+</html>

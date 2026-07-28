@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: aqua;
+            overflow: hidden;
+            
+           
+            
+        }
+        li
+        {
+          float: left; 
+           
+        }
+        ul li a
+        {
+          display: block; 
+          text-decoration: none;
+          color: black;
+          padding: 14px 16px;
+            
+        }
+        ul li a:hover
+        {
+            background-color: white;
+            border-radius: 5px;
+        }
+        .full
+        {
+            width: 40%;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 25px grey;
+        }
+        h2
+        {
+            text-align: center;
+            color: blue;
+        }
+        .title
+        {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input,select,textarea
+        {
+            padding: 10px;
+            width: 100%;
+            margin-top: 5px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type=checkbox]
+        {
+            width: auto;
+        }
+        button
+        {
+            width: 100%;
+            margin-top: 15px;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        .btn:hover
+        {
+           background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Register</a></li>
+    </ul>
+    <div class="full">
+        <h2>Student Registration Form</h2>
+    <form>
+        <label class="title">Full Name</label>
+        <input type="text" class="text" placeholder="Enter the Name"><br>
+
+        <label class="title">Email</label>
+        <input type="email" class="email" placeholder="Enter the password"><br>
+
+        <label class="title">Password</label>
+        <input type="password" class="password" placeholder="Enter the password"><br>
+
+        <label class="title">Mobile</label>
+        <input type="number" class="number" placeholder="Enter the number"><br>
+
+        <label class="title">Date of Birth</label>
+        <input type="date" class="date" placeholder="Enter the date"><br>
+
+        <label class="title">Gender</label> 
+        <input type="radio" class="Male" name="gender">
+        <label>Male</label>
+        <input type="radio" class="Female" name="gender">
+        <label>Female</label>
+        <input type="radio" class="other" name="gender">
+        <label>Other</label><br>
+
+        <label class="title">Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>B.E</option>
+            <option>Bsc</option>
+            <option>B.com</option>
+        </select><br>
+
+        <label class="title">Address</label>
+        <textarea name="text" id="" placeholder="Enter your address"></textarea>
+        <br>
+
+        <label class="title">Skills</label>
+        <input type="checkbox" name="" id="">
+        <label>HTML</label>
+        <input type="checkbox">
+        <label>CSS</label>
+        <input type="checkbox">
+        <label>JavaScript</label>
+        <input type="checkbox">
+        <label>Python</label>
+        <br>
+
+        <button class="btn">Register</button>
+    </form>
+    </div>
+</body>
+</html>
