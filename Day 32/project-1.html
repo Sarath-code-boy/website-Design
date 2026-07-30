@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading
+    {
+        text-align: center;
+        background-color: rgb(66, 43, 43);
+        color: white;
+        padding: 10px;
+    }
+    .navi
+    {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        justify-content: center;
+        background-color: antiquewhite;
+        padding: 20px;
+    }
+    @media screen and (max-width:600px)
+    {
+        .navi
+        {
+            flex-direction: column;
+        }
+    }
+    .navi>li
+    {
+        text-align: center;  
+    }
+    .box
+    {
+        display: flex;
+        gap: 20px;
+    }
+    @media screen and (max-width:600px)
+    {
+        .box
+        {
+            flex-direction: column;
+        }
+    }
+    .para1
+    {
+        background-color: rgb(245, 237, 227);
+        margin-top: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    button
+    {
+        border: none;
+        background-color: rgb(97, 93, 87);
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+    }
+    footer
+    {
+        text-align: center;
+        margin-top: 250px;
+        background-color: rgb(78, 76, 74);
+        color: white;
+        padding: 10px;
+    }
+    /* .website
+    {
+       flex-direction: row;
+    }
+    @media screen and (max-width:600px)
+    {
+        .website
+        {
+            flex-direction: column;
+        }
+    } */
+</style>
+<body>
+    <div class="website">
+        <div class="heading">My Website</div>
+        <nav class="navi">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </nav>
+        <div class="box">
+            <div class="para1">
+                <h3>Responsive Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quas.
+
+                </p>
+                <button>Click Me</button>
+            </div>
+            <div class="para1">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus. Beatae suscipit nesciunt eaque at voluptas nobis harum quis nisi.
+
+                </p>
+                <button>Click Me</button>
+            </div>
+            <div class="para1">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat perspiciatis tenetur atque consectetur deserunt, quos ratione velit! Commodi, dignissimos.
+
+                </p>
+                <button>Click Me</button>
+            </div>
+        </div>
+        
+    </div>
+    <footer>&copy; 2004 CSS Media Queries Example.All rights reserved</footer>
+</body>
+</html>
