@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabled</title>
+</head>
+   <style>
+    button
+    {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color:red
+    }
+    button:disabled
+    {
+        background-color: grey;
+        cursor: crosshair;
+    }
+   </style>
+<body>
+    <button type="button">Enable</button>
+    <button type="button" disabled>Disable</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valid-invalid</title>
+</head>
+    <style>
+        input
+        {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input:valid
+        {
+           border-color: green;
+        }
+        input:invalid
+        {
+            border-color: red;
+        }
+        /* input:required
+        {
+            background-color:transparent;
+        } */
+    </style>
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" pattern="[A-Z]{5}" required>
+        <br><br>
+        <label>Password</label>
+        <input type="password" pattern="[A-Za-z]{4,}">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
