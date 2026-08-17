@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inheritance -->
+    <!-- Inheritance means one class can use the properties and methods of another class. -->
+     <script>
+         class Animal
+         {
+            eat()
+            {
+                document.write("Animal is eating <br>");
+            }
+         }
+         class Dog extends Animal
+             {
+               bark()
+               {
+                document.write("dog is barking <br>")
+               }
+             }
+             const dog=new Dog ();
+             dog.eat();
+             dog.bark();
+     </script>
+</body>
+</html>

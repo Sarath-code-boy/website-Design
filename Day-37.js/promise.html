@@ -1,0 +1,22 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- The properties is input to accept or rejected conditions  -->
+    <h2 id="demo"></h2>
+    <script>
+        const myp1 = new Promise(function (myResolve, myReject) {
+            setTimeout(function () { myResolve("i love you!!!") }, 3000)
+        })
+        myp1.then(function (value) {
+            document.getElementById("demo").innerHTML = value;
+        })
+    </script>
+</body>
+
+</html>

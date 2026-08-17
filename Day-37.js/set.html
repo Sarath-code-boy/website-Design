@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- set is the dublicate value remove -->
+     <p id="demo"></p>
+     <script>
+         const letters= new Set();
+         letters.add("a")
+         letters.add("b")
+         letters.add("b")
+         letters.add("c")
+         document.getElementById("demo").innerHTML="the set has"+letters.size+"values";
+     </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object
+        //An object is an instance of a class 
+        // that contains properties (data) and methods (functions).
+        const student={
+            name:"john",
+            age:20,
+            grade:"c",
+            display:function()
+            {
+              document.write("name:"+this.name+"<br>")
+              document.write("age:"+this.age+"<br>")
+              document.write("grade:"+this.grade+"<br>")
+            }
+        };
+        student.display();
+        
+    </script>
+</body>
+</html>

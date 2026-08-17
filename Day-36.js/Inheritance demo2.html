@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car
+        {
+           color()
+           {
+            document.write("car color is red <br>");
+           }
+        }
+        class Brand extends Car
+        {
+            tata()
+            {
+                document.write("car brand is tata <br>");
+            }
+        }
+        const car1= new Brand();
+        const car2= new Car();
+        car1.color();
+        car1.tata();
+    </script>
+</body>
+</html>

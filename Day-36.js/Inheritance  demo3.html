@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+
+<script>
+class Car {
+    color() {
+        document.write("Car color is red <br>");
+    }
+}
+
+class Brand extends Car {
+    tata() {
+        document.write("Car brand is Tata <br>");
+    }
+}
+
+const car1 = new Brand();
+
+car1.color();
+car1.tata();
+</script>
+
+</body>
+</html>

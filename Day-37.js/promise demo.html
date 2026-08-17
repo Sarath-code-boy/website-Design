@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        const myp1=new Promise(function(myResolve,myReject)
+    {
+        setTimeout(function(){myResolve("i love you!!!")},2000)
+    })
+    myp1.then(function(value){
+        document.getElementById("demo").innerHTML=value;
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count=0
+        let intervalid=setInterval(function()
+        {
+            count++;
+            console.log("count:"+count);
+            if(count>=5)
+        {
+            clearInterval(intervalid)
+            console.log("interval is cleared after 5 attempts")
+        }
+        },1000)
+    </script>
+</body>
+</html>

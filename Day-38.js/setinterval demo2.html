@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo">Welcome</h2>
+    <script>
+        let demo=[
+            "Welcome to my site",
+            "stay tuned enjoy",
+            "Happy forever",
+            "Give to the gift"
+        ];
+        let index=0;
+        setInterval(function()
+    {
+        document.getElementById("demo").textContent=demo[index++];
+    },2000)
+    </script>
+</body>
+</html>

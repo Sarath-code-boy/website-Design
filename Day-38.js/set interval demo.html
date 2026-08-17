@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="message">Welcome</h2>
+    <Script>
+        let message =[
+            "welcome to our site!",
+            "enjoying your stay",
+            "play now",
+            "get to feel"
+        ];
+        let index=0;
+        setInterval(function()
+    {
+        document.getElementById("message").textContent=message [index++];
+    },1000)
+    </Script>
+</body>
+</html>
